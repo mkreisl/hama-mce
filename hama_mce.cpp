@@ -246,7 +246,7 @@ done:
 static void transfer0x82_cb (struct libusb_transfer *transfer)
 {
 	static const struct {
-		char code [5];
+		unsigned char code [5];
 		bool can_repeat;
 		void (*key_fn) (const char *key);
 		const char *key;
